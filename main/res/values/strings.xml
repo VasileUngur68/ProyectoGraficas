@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Proyecto Graficas</string>
+    <string name="titulo_texto_inicial">Bienvenido al Proyecto Graficas</string>
+    <string name="texto_inicial">  Esta aplicacion trata de presentar en forma de gráficas, los datos recibidos
+        en tiempo real de un servidor remoto. Se debe identificar con el usuario y la contraseña y después
+        elegir el tipo de grafica deseada y los datos para presentar. También se puede configurar una alarma
+        para cuando cambia el valor del dato elegido para esta.</string>
+    <string name="elige">Configura tu aplicacion</string>
+    <string name="titulo_spinner">Selecciona una Grafica</string>
+    <string name="formato_fecha">dd/mm/yyyy</string>
+    <string name="formato_hora">hh:mm</string>
+</resources>

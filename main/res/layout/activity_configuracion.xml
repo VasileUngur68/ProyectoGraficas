@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/fade_blue"
+    tools:context=".Configuracion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_marginBottom="20dp"
+            tools:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/eleccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondear_top"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/elige"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints" />
+
+
+            <Spinner
+                android:id="@+id/getIma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/redondear_top"
+                android:entries="@array/anime"
+                android:prompt="@string/titulo_spinner" />
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@mipmap/img01" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_alignLeft="@+id/imageView"
+                    android:layout_alignRight="@+id/imageView"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/play"
+                    android:text="PRESENTACION"
+                    tools:ignore="MissingConstraints" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="228dp"
+                tools:layout_editor_absoluteY="65dp"
+                tools:layout_marginBottom="20dp"
+                tools:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/redondear_top"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Elige los datos"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+
+
+                <CheckBox
+                    android:id="@+id/temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/redondear_derecha"
+                    android:text="Temperatura" />
+
+
+                <CheckBox
+                    android:id="@+id/hum"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/redondear_derecha"
+                    android:text="Humedad" />
+
+
+                <CheckBox
+                    android:id="@+id/codos"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/redondear_derecha"
+                    android:text="CO2" />
+
+
+                <CheckBox
+                    android:id="@+id/movim"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/redondear_derecha"
+                    android:text="Movimiento" />
+
+                <CheckBox
+                    android:id="@+id/exterior"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/redondear_derecha"
+                    android:text="Luz Exterior" />
+
+
+                <CheckBox
+                    android:id="@+id/salon"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/redondear_derecha"
+                    android:text="Luz Salon" />
+
+                <CheckBox
+                    android:id="@+id/ventanas"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/redondear_derecha"
+                    android:text="Ventanas" />
+
+
+                <CheckBox
+                    android:id="@+id/puertas"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/redondear_derecha"
+                    android:text="Puertas" />
+
+                <TextView
+                    android:id="@+id/eleccion2"
+                    android:inputType="textPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/redondear_top"
+                    android:text="Fecha y hora"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/fech"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/redondear_derecha"
+                    android:ems="10"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:clickable="true"/>
+
+                <EditText
+                    android:id="@+id/hor"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/redondear_derecha"
+                    android:textAlignment="center"
+                    android:ems="10"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:inputType="time"
+                    android:focusable="false"
+                    android:clickable="true"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

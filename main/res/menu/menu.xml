@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Opcion1"
+        android:title="Configurar Alarma"
+        android:icon="@android:drawable/arrow_up_float"  >
+        <menu>
+            <!---Group necesario para seleccionar una sola opcion, restringido po checkableBehavior="single"-->
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/item_movimiendo"
+                    android:title="Movimiento" />
+                <item android:id="@+id/item_exterior"
+                    android:title="Luz Exterior" />
+                <item android:id="@+id/item_salon"
+                    android:title="Luz Salon" />
+                <item android:id="@+id/item_ventanas"
+                    android:title="Ventanas" />
+                <item android:id="@+id/item_puertas"
+                    android:title="Puertas" />
+                <item android:id="@+id/desactivar"
+                    android:title="Desactivar Alarma" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/Opcion2"
+        android:title="Salir de la aplicacion"
+        android:icon="@android:drawable/ic_btn_speak_now" />
+
+</menu>
